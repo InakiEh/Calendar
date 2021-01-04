@@ -1,6 +1,4 @@
 # Calendar
-</br>
-</br>
 C#
 </br>
 </br>
