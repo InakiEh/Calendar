@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="16.0">
+ <Targets>
+  <Target Name="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2\bin\Debug\CalendarPart2.exe">
+   <Modules>
+    <Module Name="calendarpart2.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Firme 'CalendarPart2.exe' con una clave de nombre seguro.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Marque 'CalendarPart2.exe' con CLSCompliant(true) porque expone tipos visibles externamente.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Puesto que el ensamblado 'CalendarPart2.exe' contiene un archivo de recursos basado en ResX, márquelo con el atributo NeutralResourcesLanguage, especificando el lenguaje de los recursos del ensamblado. Esto puede mejorar el rendimiento de las búsquedas la primera vez que se recupera un recurso.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="CalendarPart2">
+       <Types>
+        <Type Name="Appointment" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#date" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="date" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Appointment.cs" Line="19">Corrija el uso de mayúsculas y minúsculas en 'date' en el nombre del miembro 'Appointment.date' cambiándolo a 'Date'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#description" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="description" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Appointment.cs" Line="18">Corrija el uso de mayúsculas y minúsculas en 'description' en el nombre del miembro 'Appointment.description' cambiándolo a 'Description'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#fromHour" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="from" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Appointment.cs" Line="20">Corrija el uso de mayúsculas y minúsculas en 'from' en el nombre del miembro 'Appointment.fromHour' cambiándolo a 'From'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAppointmentsList()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Appointment.cs" Line="24">Cambie ''List&lt;Appointment&gt;'' en 'Appointment.GetAppointmentsList()' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Appointment.cs" Line="24">Cambie 'Appointment.GetAppointmentsList()' a una propiedad cuando proceda.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#id" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="id" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Appointment.cs" Line="16">Corrija el uso de mayúsculas y minúsculas en 'id' en el nombre del miembro 'Appointment.id' cambiándolo a 'Id'. 'Id' es una abreviación y, por tanto, no está sujeto a las directrices de mayúsculas y minúsculas para acrónimos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#title" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="title" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Appointment.cs" Line="17">Corrija el uso de mayúsculas y minúsculas en 'title' en el nombre del miembro 'Appointment.title' cambiándolo a 'Title'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#toHour" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="to" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Appointment.cs" Line="21">Corrija el uso de mayúsculas y minúsculas en 'to' en el nombre del miembro 'Appointment.toHour' cambiándolo a 'To'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Login" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="95" Level="Error">Reemplace el término 'Login' en el nombre del tipo 'Login' por la alternativa preferida 'LogOn'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#userSelected" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Puesto que el campo 'Login.userSelected' es visible fuera del tipo declarativo, cambie su accesibilidad a privada y agregue una propiedad, con la misma accesibilidad que tiene el campo actualmente, para proporcionar acceso a él.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MainWindow" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddNumberToCell(System.Int32,System.Int32,System.Windows.Controls.StackPanel)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="349">Considere cambiar el tipo de parámetro 'dayCell' en 'MainWindow.AddNumberToCell(int, int, StackPanel)' de 'StackPanel' al tipo base 'Panel'. Parece que este método sólo requiere los miembros de clase base en la implementación. Suprima esta infracción si hay una razón de peso que requiere el tipo más derivado en la signatura del método.</Issue>
+            </Message>
+            <Message Id="2" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="352">En el método 'MainWindow.AddNumberToCell(int, int, StackPanel)' visible externamente, valide el parámetro 'dayCell' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateAppointment(System.Object,System.Windows.RoutedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="newAppointment" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="437">'MainWindow.CreateAppointment(object, RoutedEventArgs)' declara una variable, 'newAppointment', de tipo 'Appointment', que no se usa nunca o sólo se asigna. Use esta variable o quítela.</Issue>
+            </Message>
+            <Message Id="yearForCreation" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="440">'MainWindow.CreateAppointment(object, RoutedEventArgs)' declara una variable, 'yearForCreation', de tipo 'string', que no se usa nunca o sólo se asigna. Use esta variable o quítela.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DeleteAppointment(System.Object,System.Windows.RoutedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="yearForCreation" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="537">'MainWindow.DeleteAppointment(object, RoutedEventArgs)' declara una variable, 'yearForCreation', de tipo 'string', que no se usa nunca o sólo se asigna. Use esta variable o quítela.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="522">Puesto que el comportamiento de 'Convert.ToInt32(object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'MainWindow.DeleteAppointment(object, RoutedEventArgs)' por una llamada a 'Convert.ToInt32(object, IFormatProvider)'. Si el resultado de 'Convert.ToInt32(object, IFormatProvider)' estará basado en los datos proporcionados por el usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillCellsList(System.Collections.Generic.List`1&lt;System.Windows.Controls.StackPanel&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="cells" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="144">'cells', un parámetro declarado en 'MainWindow.FillCellsList(List&lt;StackPanel&gt;)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillFromHourComboBox(System.Windows.Controls.ComboBox)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="217">Considere cambiar el tipo de parámetro 'fromHour' en 'MainWindow.FillFromHourComboBox(ComboBox)' de 'ComboBox' al tipo base 'ItemsControl'. Parece que este método sólo requiere los miembros de clase base en la implementación. Suprima esta infracción si hay una razón de peso que requiere el tipo más derivado en la signatura del método.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="220">En el método 'MainWindow.FillFromHourComboBox(ComboBox)' visible externamente, valide el parámetro 'fromHour' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillHoursList(System.Collections.Generic.List`1&lt;System.String&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="190">Cambie ''List&lt;string&gt;'' en 'MainWindow.FillHoursList(List&lt;string&gt;)' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="190">El parámetro 'this' (o 'Me' en Visual Basic) de 'MainWindow.FillHoursList(List&lt;string&gt;)' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="191">En el método 'MainWindow.FillHoursList(List&lt;string&gt;)' visible externamente, valide el parámetro 'hours' antes de usarlo.</Issue>
+            </Message>
+            <Message Id="hours" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="190">'hours', un parámetro declarado en 'MainWindow.FillHoursList(List&lt;string&gt;)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillLabelsList(System.Collections.Generic.List`1&lt;System.Windows.Controls.Label&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="numbersOfDays" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="99">'numbersOfDays', un parámetro declarado en 'MainWindow.FillLabelsList(List&lt;Label&gt;)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillMonthComboBox(System.Windows.Controls.ComboBox)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="231">Considere cambiar el tipo de parámetro 'monthSelector' en 'MainWindow.FillMonthComboBox(ComboBox)' de 'ComboBox' al tipo base 'ItemsControl'. Parece que este método sólo requiere los miembros de clase base en la implementación. Suprima esta infracción si hay una razón de peso que requiere el tipo más derivado en la signatura del método.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="234">En el método 'MainWindow.FillMonthComboBox(ComboBox)' visible externamente, valide el parámetro 'monthSelector' antes de usarlo.</Issue>
+            </Message>
+            <Message Id="month" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="231">'month', una variable declarada en 'MainWindow.FillMonthComboBox(ComboBox)', tiene el mismo nombre que un campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+            <Message Id="monthSelector" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="231">'monthSelector', un parámetro declarado en 'MainWindow.FillMonthComboBox(ComboBox)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillMonthsList(System.Collections.Generic.List`1&lt;System.String&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="84">El parámetro 'this' (o 'Me' en Visual Basic) de 'MainWindow.FillMonthsList(List&lt;string&gt;)' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+            <Message Id="months" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="84">'months', un parámetro declarado en 'MainWindow.FillMonthsList(List&lt;string&gt;)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillToHourComboBox(System.Windows.Controls.ComboBox)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="224">Considere cambiar el tipo de parámetro 'ToHour' en 'MainWindow.FillToHourComboBox(ComboBox)' de 'ComboBox' al tipo base 'ItemsControl'. Parece que este método sólo requiere los miembros de clase base en la implementación. Suprima esta infracción si hay una razón de peso que requiere el tipo más derivado en la signatura del método.</Issue>
+            </Message>
+            <Message Id="To" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="224">En el miembro 'MainWindow.FillToHourComboBox(ComboBox)', corrija el uso de mayúsculas y minúsculas en 'To' en el nombre del parámetro 'ToHour' cambiándolo a 'to'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="227">En el método 'MainWindow.FillToHourComboBox(ComboBox)' visible externamente, valide el parámetro 'ToHour' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillWeekList(System.Collections.Generic.List`1&lt;System.String&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="73">El parámetro 'this' (o 'Me' en Visual Basic) de 'MainWindow.FillWeekList(List&lt;string&gt;)' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+            <Message Id="weeks" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="73">'weeks', un parámetro declarado en 'MainWindow.FillWeekList(List&lt;string&gt;)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillYearList()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="year" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="238">'year', una variable declarada en 'MainWindow.FillYearList()', tiene el mismo nombre que un campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GenerateDates(System.String,System.String,System.Collections.Generic.List`1&lt;CalendarPart2.Appointment&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="appointments" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="259">Nunca se usa el parámetro 'appointments' de 'MainWindow.GenerateDates(string, string, List&lt;Appointment&gt;)'. Quite el parámetro o utilícelo en el cuerpo del método.</Issue>
+            </Message>
+            <Message Id="month" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="259">Nunca se usa el parámetro 'month' de 'MainWindow.GenerateDates(string, string, List&lt;Appointment&gt;)'. Quite el parámetro o utilícelo en el cuerpo del método.</Issue>
+            </Message>
+            <Message Id="year" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="259">Nunca se usa el parámetro 'year' de 'MainWindow.GenerateDates(string, string, List&lt;Appointment&gt;)'. Quite el parámetro o utilícelo en el cuerpo del método.</Issue>
+            </Message>
+            <Message Id="month" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="259">'month', un parámetro declarado en 'MainWindow.GenerateDates(string, string, List&lt;Appointment&gt;)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+            <Message Id="year" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="259">'year', un parámetro declarado en 'MainWindow.GenerateDates(string, string, List&lt;Appointment&gt;)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDateValue()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="totalDaysOnMonth" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="368">'MainWindow.GetDateValue()' declara una variable, 'totalDaysOnMonth', de tipo 'int', que no se usa nunca o sólo se asigna. Use esta variable o quítela.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="365">Puesto que el comportamiento de 'Convert.ToInt32(string)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'MainWindow.GetDateValue()' por una llamada a 'Convert.ToInt32(string, IFormatProvider)'. Si el resultado de 'Convert.ToInt32(string, IFormatProvider)' estará basado en los datos proporcionados por el usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="364">Cambie 'MainWindow.GetDateValue()' a una propiedad cuando proceda.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetFirstDayOfTheWeekOfTheMonth()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="387">Cambie 'MainWindow.GetFirstDayOfTheWeekOfTheMonth()' a una propiedad cuando proceda.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetMonthNumber()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="402">Cambie 'MainWindow.GetMonthNumber()' a una propiedad cuando proceda.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetMonthSelected()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="415">Cambie 'MainWindow.GetMonthSelected()' a una propiedad cuando proceda.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetMonthsList()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="427">Cambie ''List&lt;string&gt;'' en 'MainWindow.GetMonthsList()' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="427">Cambie 'MainWindow.GetMonthsList()' a una propiedad cuando proceda.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetTotalDaysOnMonth()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="310">Cambie 'MainWindow.GetTotalDaysOnMonth()' a una propiedad cuando proceda.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetWeeksList()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="431">Cambie ''List&lt;string&gt;'' en 'MainWindow.GetWeeksList()' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="431">Cambie 'MainWindow.GetWeeksList()' a una propiedad cuando proceda.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetYearNumber()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="398">Puesto que el comportamiento de 'Convert.ToInt32(object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'MainWindow.GetYearNumber()' por una llamada a 'Convert.ToInt32(object, IFormatProvider)'. Si el resultado de 'Convert.ToInt32(object, IFormatProvider)' estará basado en los datos proporcionados por el usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="397">Cambie 'MainWindow.GetYearNumber()' a una propiedad cuando proceda.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetYearSelected()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="421">Cambie 'MainWindow.GetYearSelected()' a una propiedad cuando proceda.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#insertContentIntoDay(System.Int32,System.Int32,System.Collections.Generic.List`1&lt;CalendarPart2.Appointment&gt;,System.DateTime)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="318">Cambie ''List&lt;Appointment&gt;'' en 'MainWindow.insertContentIntoDay(int, int, List&lt;Appointment&gt;, DateTime)' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="insert" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="318">Corrija el uso de mayúsculas y minúsculas en 'insert' en el nombre del miembro 'MainWindow.insertContentIntoDay(int, int, List&lt;Appointment&gt;, DateTime)' cambiándolo a 'Insert'.</Issue>
+            </Message>
+            <Message Id="2" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="322">En el método 'MainWindow.insertContentIntoDay(int, int, List&lt;Appointment&gt;, DateTime)' visible externamente, valide el parámetro 'appointments' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#log" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">Parece que el campo 'MainWindow.log' no se usa nunca o sólo se asigna alguna vez. Utilice este campo o quítelo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MessageOfAppointmentCreated()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="465">El parámetro 'this' (o 'Me' en Visual Basic) de 'MainWindow.MessageOfAppointmentCreated()' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateAppointment(System.Object,System.Windows.RoutedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="yearForCreation" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="508">'MainWindow.UpdateAppointment(object, RoutedEventArgs)' declara una variable, 'yearForCreation', de tipo 'string', que no se usa nunca o sólo se asigna. Use esta variable o quítela.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="MainWindow.xaml.cs" Line="488">Puesto que el comportamiento de 'Convert.ToInt32(object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'MainWindow.UpdateAppointment(object, RoutedEventArgs)' por una llamada a 'Convert.ToInt32(object, IFormatProvider)'. Si el resultado de 'Convert.ToInt32(object, IFormatProvider)' estará basado en los datos proporcionados por el usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Week" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ChangeInterface(System.Int32,System.DateTime,System.Collections.Generic.List`1&lt;System.String&gt;,System.Collections.Generic.List`1&lt;CalendarPart2.Appointment&gt;,System.Collections.Generic.List`1&lt;System.String&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="109">Cambie ''List&lt;Appointment&gt;'' en 'Week.ChangeInterface(int, DateTime, List&lt;string&gt;, List&lt;Appointment&gt;, List&lt;string&gt;)' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="109">Cambie ''List&lt;string&gt;'' en 'Week.ChangeInterface(int, DateTime, List&lt;string&gt;, List&lt;Appointment&gt;, List&lt;string&gt;)' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="109">Cambie ''List&lt;string&gt;'' en 'Week.ChangeInterface(int, DateTime, List&lt;string&gt;, List&lt;Appointment&gt;, List&lt;string&gt;)' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="System.Windows.Controls.TextBlock.set_Text(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="124">El método 'Week.ChangeInterface(int, DateTime, List&lt;string&gt;, List&lt;Appointment&gt;, List&lt;string&gt;)' pasa una cadena literal como parámetro 'value' de una llamada a 'TextBlock.Text.set(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: " ".</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="124">Puesto que el comportamiento de 'int.ToString()' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Week.ChangeInterface(int, DateTime, List&lt;string&gt;, List&lt;Appointment&gt;, List&lt;string&gt;)' por una llamada a 'int.ToString(IFormatProvider)'. Si el resultado de 'int.ToString(IFormatProvider)' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="4" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="124">En el método 'Week.ChangeInterface(int, DateTime, List&lt;string&gt;, List&lt;Appointment&gt;, List&lt;string&gt;)' visible externamente, valide el parámetro 'months' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateAppointments()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="appointments" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="39">'Week.CreateAppointments()' declara una variable, 'appointments', de tipo 'List&lt;Appointment&gt;', que no se usa nunca o sólo se asigna. Use esta variable o quítela.</Issue>
+            </Message>
+            <Message Id="today" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="40">'Week.CreateAppointments()' declara una variable, 'today', de tipo 'DateTime', que no se usa nunca o sólo se asigna. Use esta variable o quítela.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#insertAppointmentOnCell(System.Boolean,CalendarPart2.Appointment,System.Collections.Generic.List`1&lt;System.String&gt;,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="63">Cambie ''List&lt;string&gt;'' en 'Week.insertAppointmentOnCell(bool, Appointment, List&lt;string&gt;, int)' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="insert" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="63">Corrija el uso de mayúsculas y minúsculas en 'insert' en el nombre del miembro 'Week.insertAppointmentOnCell(bool, Appointment, List&lt;string&gt;, int)' cambiándolo a 'Insert'.</Issue>
+            </Message>
+            <Message Id="startHour+1" TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalWarning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="75">Corrija el desbordamiento potencial en la operación 'startHour+1' en 'Week.insertAppointmentOnCell(bool, Appointment, List&lt;string&gt;, int)'.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="67">En el método 'Week.insertAppointmentOnCell(bool, Appointment, List&lt;string&gt;, int)' visible externamente, valide el parámetro 'appointment' antes de usarlo.</Issue>
+            </Message>
+            <Message Id="2" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="72">En el método 'Week.insertAppointmentOnCell(bool, Appointment, List&lt;string&gt;, int)' visible externamente, valide el parámetro 'daysOfWeek' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InsertTheAppointmens(System.Collections.Generic.List`1&lt;CalendarPart2.Appointment&gt;,System.Collections.Generic.List`1&lt;System.String&gt;,System.Collections.Generic.List`1&lt;System.DateTime&gt;,System.Int32,System.Windows.Controls.Grid)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="hourCells" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="43">Nunca se usa el parámetro 'hourCells' de 'Week.InsertTheAppointmens(List&lt;Appointment&gt;, List&lt;string&gt;, List&lt;DateTime&gt;, int, Grid)'. Quite el parámetro o utilícelo en el cuerpo del método.</Issue>
+            </Message>
+            <Message Id="hourCells" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="43">'hourCells', un parámetro declarado en 'Week.InsertTheAppointmens(List&lt;Appointment&gt;, List&lt;string&gt;, List&lt;DateTime&gt;, int, Grid)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+            <Message Id="weekCounter" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="43">'weekCounter', un parámetro declarado en 'Week.InsertTheAppointmens(List&lt;Appointment&gt;, List&lt;string&gt;, List&lt;DateTime&gt;, int, Grid)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReloadInterface(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="weekCounter" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="95">Nunca se usa el parámetro 'weekCounter' de 'Week.ReloadInterface(int)'. Quite el parámetro o utilícelo en el cuerpo del método.</Issue>
+            </Message>
+            <Message Id="weekCounter" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2020-06-13 04:37:27Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Iñaki\Desktop\Verifiacion y Calidad\CalendarPart3\CalendarPart2" File="Week.xaml.cs" Line="95">'weekCounter', un parámetro declarado en 'Week.ReloadInterface(int)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Los ensamblados deben tener nombres seguros válidos</Name>
+   <Description>Puede que el ensamblado no tenga un nombre seguro, que no sea válido o que éste sea válido únicamente por la configuración del equipo. No se puede implementar el ensamblado en este estado. Las causas más probables son: 1) El contenido del ensamblado se modificó después de firmarlo. 2) Error en el proceso de firma. 3) El ensamblado tenía firma retardada. 4) Existía una clave del Registro que permitió que se realizara la comprobación (de lo contrario no se hubiera realizado).</Description>
+   <Resolution Name="NoStrongName">Firme {0} con una clave de nombre seguro.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Evitar los campos privados sin utilizar</Name>
+   <Description>Se detectaron campos privados a los que no parece que se obtenga acceso en el ensamblado. Si esta infracción da lugar a un error, envíe un informe sobre el problema al equipo de análisis de código de Visual Studio.</Description>
+   <Resolution Name="Default">Parece que el campo {0} no se usa nunca o sólo se asigna alguna vez. Utilice este campo o quítelo.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011">
+   <Name>Considere pasar los tipos base como parámetros</Name>
+   <Description>Si utiliza los tipos base como parámetros de métodos se mejora la reutilización de estos métodos si sólo utiliza métodos y propiedades de la clase base del parámetro. Por ejemplo: utilizar una secuencia en lugar de FileStream como un parámetro únicamente cuando se llama a Stream.Read(), hace que el método funcione en todos los tipos de secuencias, en lugar de funcionar únicamente en secuencias de archivos.</Description>
+   <Resolution Name="Default">Considere cambiar el tipo de parámetro {0} en {1} de {2} al tipo base {3}. Parece que este método sólo requiere los miembros de clase base en la implementación. Suprima esta infracción si hay una razón de peso que requiere el tipo más derivado en la signatura del método.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/3hk32yyz.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>No declarar campos de instancia visibles</Name>
+   <Description>Los campos de instancia que son visibles fuera del tipo que los declara, limitan la capacidad de cambiar los detalles de la implementación de esos elementos de datos. Use propiedades en su lugar. No comprometen el uso o el rendimiento, y proporcionan flexibilidad porque ocultan los detalles de la implementación de los datos subyacentes.</Description>
+   <Resolution Name="Default">Puesto que el campo {0} es visible fuera del tipo declarativo, cambie su accesibilidad a privada y agregue una propiedad, con la misma accesibilidad que tiene el campo actualmente, para proporcionar acceso a él.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182141.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>No exponer listas genéricas</Name>
+   <Description>No exponga List&lt;T&gt; en modelos de objetos. Utilice Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt; en su lugar. Debe utilizar List&lt;T&gt; desde la implementación, no en la API de modelo de objetos. List&lt;T&gt; está optimizado para el rendimiento de versiones a largo plazo. Por ejemplo, si devuelve List&lt;T&gt; al código del cliente, no podrá recibir notificaciones cuando el código del cliente modifique la colección.</Description>
+   <Resolution Name="Default">Cambie '{0}' en {1} para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente</Name>
+   <Description>Los identificadores de tipo, espacio de nombres y miembro usan las mayúsculas y minúsculas como en Pascal. Los identificadores de parámetro usan las mayúsculas y minúsculas como en Camel. Los acrónimos de dos letras en estos identificadores deben ir en mayúsculas; por ejemplo, use System.IO en lugar de System.Io. Los acrónimos de tres o más letras deben usar las mayúsculas y minúsculas como en Pascal; por ejemplo, use System.Xml en lugar de System.XML. La convención de mayúsculas y minúsculas Pascal pone en mayúscula la primera letra de cada palabra, como en BackColor. La convención de mayúsculas y minúsculas Camel pone en minúscula la primera letra de la primera palabra y, en mayúscula, la primera letra de las palabras siguientes, como en backgroundColor. Si bien puede ser una práctica común para algunos acrónimos de dos letras no ponerlos totalmente en mayúsculas, no se deben excluir las infracciones de esta regla por esta razón. Por ejemplo, 'DbConnection', es común pero incorrecto; use DBConnection. Una infracción de esta regla puede ser necesaria por compatibilidad con esquemas de símbolos no administrados existentes. En general, sin embargo, estos símbolos no deberían estar visibles fuera del ensamblado que los usa.</Description>
+   <Resolution Name="Member">Corrija el uso de mayúsculas y minúsculas en '{0}' en el nombre del miembro {1} cambiándolo a '{2}'.</Resolution>
+   <Resolution Name="MemberAbbreviation">Corrija el uso de mayúsculas y minúsculas en '{0}' en el nombre del miembro {1} cambiándolo a '{2}'. '{2}' es una abreviación y, por tanto, no está sujeto a las directrices de mayúsculas y minúsculas para acrónimos.</Resolution>
+   <Resolution Name="MemberParameter">En el miembro {0}, corrija el uso de mayúsculas y minúsculas en '{1}' en el nombre del parámetro {2} cambiándolo a '{3}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Marque los ensamblados con CLSCompliantAttribute</Name>
+   <Description>Los ensamblados deben establecer explícitamente ser conformes a CLS usando el atributo CLSCompliant. Un ensamblado sin este atributo no es conforme a CLS. Los ensamblados, módulos y tipos pueden ser conformes a CLS incluso si alguna parte del ensamblado, módulo o tipo no son conformes a CLS. Se aplican las siguientes reglas: 1) Si el elemento está marcado como CLSCompliant, cualquier miembro no compatible debe tener el atributo CLSCompliant presente con el argumento establecido como false. 2) Se debe proporcionar un miembro alternativo conforme a CLS comparable con cada miembro que no sea conforme a CLS.</Description>
+   <Resolution Name="Default">Marque {0} con CLSCompliant(true) porque expone tipos visibles externamente.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>Marque los ensamblados con NeutralResourcesLanguageAttribute</Name>
+   <Description>El atributo NeutralResourcesLanguage informa a ResourceManager del lenguaje usado para presentar los recursos de referencia cultural neutra para un ensamblado. Cuando se buscan recursos en la misma referencia cultural que el lenguaje de recursos neutro, ResourceManager usa automáticamente los recursos del ensamblado principal, en lugar de buscar un ensamblado satélite con la cultura de la interfaz de usuario actual para el subproceso actual. Esto mejorará el rendimiento de las búsquedas del primer recurso que cargue y puede reducir el espacio de trabajo.</Description>
+   <Resolution Name="Default">Puesto que el ensamblado {0} contiene un archivo de recursos basado en ResX, márquelo con el atributo NeutralResourcesLanguage, especificando el lenguaje de los recursos del ensamblado. Esto puede mejorar el rendimiento de las búsquedas la primera vez que se recupera un recurso.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385967.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Marcar el miembro como estático</Name>
+   <Description>Los métodos que no tienen acceso a los datos de instancias o a los métodos de instancias de llamadas se pueden marcar como estáticos (compartidos en VB). Después de esto, el compilador emitirá sitios de llamadas no virtuales para estos miembros, lo que impedirá la comprobación en tiempo de ejecución de cada llamada que garantice que el puntero del objeto actual no es nulo. Esto puede dar lugar a un mejor rendimiento en el código sensible al rendimiento. En algunos casos, la imposibilidad de tener acceso a la instancia del objeto actual representa un problema de corrección.</Description>
+   <Resolution Name="Default">El parámetro 'this' (o 'Me' en Visual Basic) de {0} no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>No pasar cadenas literal como parámetros localizados</Name>
+   <Description>Las cadenas de tipo literal incrustadas en el código fuente son difíciles de localizar. Evite pasar cadenas literal como argumentos en circunstancias donde, por lo general, se espera una cadena localizada.</Description>
+   <Resolution Name="KnownValue">El método {0} pasa una cadena literal como parámetro '{1}' de una llamada a {2}. En su lugar, recupere las siguientes cadenas de una tabla de recursos: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233">
+   <Name>Las operaciones no deben desbordarse</Name>
+   <Description>No se deben realizar las operaciones aritméticas sin validar primero los operandos para evitar el desbordamiento.</Description>
+   <Resolution Name="Default">Corrija el desbordamiento potencial en la operación '{0}' en {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182354.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Quitar variables locales no utilizadas</Name>
+   <Description>Quite las variables locales que no se utilizan o que están asignadas sólo en implementaciones de métodos.</Description>
+   <Resolution Name="Default">{0} declara una variable, {1}, de tipo {2}, que no se usa nunca o sólo se asigna. Use esta variable o quítela.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Revisar parámetros sin utilizar</Name>
+   <Description>Revise los parámetros de los métodos no virtuales que no se usan en el cuerpo del método para asegurar que no existe corrección al error de acceso a los mismos. Los parámetros sin usar conllevan un costo por mantenimiento y rendimiento. Algunas veces la infracción de esta regla puede señalar un error de implementación en el método (por ejemplo el parámetro debe haberse usado en el cuerpo del método). Excluya las advertencias de esta regla si el parámetro debe existir por compatibilidad con versiones anteriores.</Description>
+   <Resolution Name="Default">Nunca se usa el parámetro {0} de {1}. Quite el parámetro o utilícelo en el cuerpo del método.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Especificar IFormatProvider</Name>
+   <Description>Si existe una sobrecarga que toma un argumento IFormatProvider, se debe llamar siempre en favor de una sobrecarga que no lo haga. Algunos métodos del runtime convierten un valor a o desde una representación de cadena y toman un parámetro de cadena que contiene uno o varios caracteres, denominados especificadores de formato, que indican cómo se debe convertir el valor. Si el significado del especificador de formato varía por referencia cultural, un objeto de formato proporciona los caracteres usados en la representación de cadena. En escenarios donde el comportamiento de ordenación y comparación no debería cambiar nunca entre referecias culturales, especifique CultureInfo.InvariantCulture; de lo contrario, especifique CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Puesto que el comportamiento de {0} podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en {1} por una llamada a {2}. Si el resultado de {2} estará basado en los datos proporcionados por el usuario, especifique {3} como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Puesto que el comportamiento de {0} podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en {1} por una llamada a {2}. Si el resultado de {2} se mostrará al usuario, especifique {3} como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+   <Name>Utilizar términos preferidos</Name>
+   <Description>Utilice términos preferidos antes que alternativas desusadas.</Description>
+   <Resolution Name="Type">Reemplace el término '{0}' en el nombre del tipo {1} por la alternativa preferida '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182258.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024">
+   <Name>Utilizar las propiedades donde corresponda</Name>
+   <Description>Se deben utilizar propiedades en lugar de métodos Get/Set en la mayoría de situaciones. Los métodos son preferibles a las propiedades en las siguientes situaciones: cuando la operación es una conversión, es cara o tiene un efecto secundario observable; el orden de la ejecución es importante; cuando la doble llamada continua al método crea resultados diferentes; cuando un miembro es estático pero devuelve un valor mutable; o si el miembro devuelve una matriz.</Description>
+   <Resolution Name="Default">Cambie {0} a una propiedad cuando proceda.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182181.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validar argumentos de métodos públicos</Name>
+   <Description>Todos los argumentos de referencia pasados a métodos visibles externamente deben comprobarse para ver si son NULL (Nothing en VB). Si procede, produzca una excepción System.ArgumentNullException cuando el argumento sea NULL.</Description>
+   <Resolution Name="Default">En el método {0} visible externamente, valide el parámetro '{1}' antes de usarlo.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500">
+   <Name>Los nombres de las variables no deben coincidir con los nombres de los campos</Name>
+   <Description>El campo de instancia y los nombres de variables no deben ser idénticos dentro del mismo ámbito.</Description>
+   <Resolution Name="Local">{0}, una variable declarada en {1}, tiene el mismo nombre que un campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Resolution>
+   <Resolution Name="Parameter">{0}, un parámetro declarado en {1}, tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182216.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="16.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Categoría</String>
+  <String Key="Certainty">Certeza</String>
+  <String Key="CollapseAll">Contraer todo</String>
+  <String Key="CheckId">Comprobar id.</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">errores</String>
+  <String Key="ExpandAll">Expandir todo</String>
+  <String Key="Help">Ayuda</String>
+  <String Key="Line">Línea</String>
+  <String Key="Messages">mensajes</String>
+  <String Key="LocationNotStoredInPdb">[Ubicación no almacenada en Pdb]</String>
+  <String Key="Project">Proyecto</String>
+  <String Key="Resolution">Resolución</String>
+  <String Key="Rule">Regla</String>
+  <String Key="RuleFile">Archivo de regla</String>
+  <String Key="RuleDescription">Descripción de la regla</String>
+  <String Key="Source">Origen</String>
+  <String Key="Status">Estado</String>
+  <String Key="Target">Círculos concéntricos</String>
+  <String Key="Warning">Advertencia</String>
+  <String Key="Warnings">advertencias</String>
+  <String Key="ReportTitle">Informe de análisis del código</String>
+ </Localized>
+</FxCopReport>
